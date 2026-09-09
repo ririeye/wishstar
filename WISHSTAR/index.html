@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wish Upon a Star</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <h1>✨ Wish Upon a Star ✨</h1>
+
+        <p>Write down your wish and send it to the stars.</p>
+
+        <button onclick="openWishBox()">
+            Make a Wish 🌟
+        </button>
+
+
+        <div id="wishBox" class="wish-box">
+
+            <h2>🌟 Make Your Wish</h2>
+
+            <input
+                type="text"
+                id="wishInput"
+                placeholder="Write your wish here..."
+            >
+
+            <button onclick="makeWish()">
+                Send to the Stars ✨
+            </button>
+
+        </div>
+
+
+        <div id="stars">
+        </div>
+        <div id="stars">
+</div>
+
+<div id="shootingStar">🌠</div>
+<div id="wishPopup" class="wish-popup">
+
+    <div class="wish-popup-content">
+
+        <button class="close-popup" onclick="closeWishPopup()">✖</button>
+
+        <h2>💫 Your Wish</h2>
+
+        <p id="popupWishText"></p>
+
+        <button id="fulfillButton" onclick="fulfillWish()">
+            🌟 My Wish Came True
+        </button>
+
+    </div>
+
+</div>
+        <p id="wishCount">⭐ You have made 0 wishes ✨</p>
+
+
+        <div class="dreams-section">
+
+            <h2>✨ Dreams Come True ✨</h2>
+
+            <div id="fulfilledWishes">
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
